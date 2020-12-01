@@ -10,9 +10,9 @@
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
     if(isiOS){
-//         window.location.href = '安卓下载地址'
         alert("IOS")
         document.title = "IOS"    
+        window.location.href = "https://sd.nafcenter.com/app-release.apk"
     }else if(isAndroid){
         alert("Android")
         document.title = "Android"
