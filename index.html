@@ -6,7 +6,17 @@
 </head>
 <body>
 <script>
-    window.location.href="https://sd.nafcenter.com/app-release.apk"
+    var u = navigator.userAgent;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    if(isiOS){
+//         window.location.href = '安卓下载地址'
+        document.title = "IOS"
+    }else if(isAndroid){
+        document.title = "Android"
+        window.location.href = 'window.location.href="https://sd.nafcenter.com/app-release.apk"'
+    }
+    
 </script>
 </body>
 </html>
