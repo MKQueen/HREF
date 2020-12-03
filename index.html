@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>跳转</title>
 </head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 100%;
+    }
+</style>
 <body>
+<img src="" alt="" id="backgroundIMg">
 <script>
     var u = navigator.userAgent;
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
@@ -14,6 +24,8 @@
         document.title = "IOS"    
         window.location.href = "https://sd.nafcenter.com/app-release.apk"
     }else if(isAndroid){
+        let bgImg = document.getElementById('backgroundIMg')
+        bgImg.src = 'img/bg.png'
 //         alert("Android")
         document.title = "Android"
         window.location.href = "https://sd.nafcenter.com/app-release.apk"
