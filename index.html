@@ -14,21 +14,23 @@
     }
 </style>
 <body>
-<img src="img/bg.png" alt="" id="backgroundIMg">
+<img src="img/bg-min.png" alt="" id="backgroundIMg">
 <script>
     var u = navigator.userAgent;
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
     if(isiOS){
 //         alert("IOS")
-        document.title = "IOS"    
-        window.location.href = "https://sd.nafcenter.com/app-release.apk"
+//         document.title = "IOS"
+        document.title = "小金助手下载"
+        window.location.href = "https://sd.nafcenter.com/%E5%B0%8F%E9%87%91%E5%8A%A9%E6%89%8B.apk"
     }else if(isAndroid){
         let bgImg = document.getElementById('backgroundIMg')
-        bgImg.src = 'img/bg.png'
+        bgImg.src = 'img/bg-min.png'
 //         alert("Android")
-        document.title = "Android"
-        window.location.href = "https://sd.nafcenter.com/app-release.apk"
+//         document.title = "Android"
+        document.title = "小金助手下载"
+        window.location.href = "https://sd.nafcenter.com/%E5%B0%8F%E9%87%91%E5%8A%A9%E6%89%8B.apk"
     }
     
 </script>
